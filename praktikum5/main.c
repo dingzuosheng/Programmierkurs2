@@ -18,10 +18,10 @@ int main()
     printf("Die kleinste Zahl ist:%f\n", min(a, 4));
     printf("Das neues Zeichenkette ist %s\n", stringcat(str1, str2));
     printf("Das neues Zeichenkette ist %s\n", stringcatAlter(str1, str2));
-    printf("Das Ergebnis von (10 0) ist %d\n", bionomial(10, 0));
-    printf("Das Ergebnis von (10 1) ist %d\n", bionomial(10, 1));
-    printf("Das Ergebnis von (10 10) ist %d\n", bionomial(10, 10));
-    printf("Das Ergebnis von (49 6) ist %d\n", bionomial(49, 6));
+    printf("Das Ergebnis von (10 0) ist %.f\n", bionomial(10, 0));
+    printf("Das Ergebnis von (10 1) ist %.f\n", bionomial(10, 1));
+    printf("Das Ergebnis von (10 10) ist %.f\n", bionomial(10, 10));
+    printf("Das Ergebnis von (49 6) ist %.f\n", bionomial(49, 6));
 
     return 0;
 }

@@ -12,8 +12,8 @@ double fakultaet(int n)
 
 double bionomial(int n, int k)
 {
-    int zaehler = fakultaet(n);
-    int nenner1 = fakultaet(k);
-    int nenner2 = fakultaet(n - k);
-    return zaehler / nenner1 * nenner2;
+    double zaehler = fakultaet(n);
+    double nenner1 = fakultaet(k);
+    double nenner2 = fakultaet(n - k);
+    return zaehler / (nenner1 * nenner2);
 }
