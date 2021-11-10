@@ -1,0 +1,1 @@
+int countspace_index(char s[]);
