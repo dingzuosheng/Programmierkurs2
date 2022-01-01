@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main(){
-    stack s;
+    stack s<double>;
     s.push(1.0);
     s.push(10.0);
 

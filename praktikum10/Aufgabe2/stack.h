@@ -11,39 +11,39 @@ class Stack{
             }
         };
         element* top;
+        T emptyerror;
     public:
-        Stack();
+        Stack(T emptyerror);
         ~Stack();
         Stack(const Stack& orig);
         int push(T key);
         T pop();
 };
 
-template<T>
-Stack::Stack(){
-    //std::cout << "Constructor " << std::endl;
-    top = nullptr;
+template<class T>
+Stack<T>::Stack(T emptyerror):top{nullptr},emptyerror{emptyerror}{
+
 }
-template<T>
-Stack::~Stack(){
+template<class T>
+Stack<T>::~Stack(){
     //std::cout << "Destruktor" << std::endl;
-    while(pop()!=-1);
+    while(pop()!=emptyerror);
 }
-template<T>
-Stack::Stack(const Stack& orig):Stack{}{
-    Stack tmp;
+template<class T>
+Stack<T>::Stack(const Stack& orig):Stack<T>{}{
+    Stack<T> tmp;
     element* e = orig.top;
     while(e!=nullptr){
         tmp.push(e->key);
         e = e->next;
     }
     double k;
-    while((k=tmp.pop())!=-1.0){
+    while((k=tmp.pop())!=emptyerror){
         push(k);
     }
 }
-template<T>
-int Stack::push(T key){
+template<class T>
+int Stack<T>::push(T key){
     element* neu = new element{key,top};
     if(neu){//wenn es gespeichert wurde
         top = neu;
@@ -52,8 +52,8 @@ int Stack::push(T key){
         return 0;
     }
 }
-template<T>
-T Stack::pop(){
+template<class T>
+T Stack<T>::pop(){
     if(top){
         T k = top->key;
         element* tmp = top;
@@ -62,6 +62,6 @@ T Stack::pop(){
         return k; 
     }else{
         //TODO throw exception
-        return -1;
+        return emptyerror;
     }
 }

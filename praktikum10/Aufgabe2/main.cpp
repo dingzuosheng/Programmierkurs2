@@ -1,27 +1,29 @@
 #include "Stack.h"
+#include <string>
 #include <iostream>
-
+/*
 void foo(Stack* s){
 
 }
-
+*/
 int main(){
-    //Stack s{};
-    Stack* s = new Stack();
+    Stack<std::string> s{"emptypop"};
+    Stack<double>  *t = new Stack<double>(-1.0);
 
     for(int i = 0; i<=10; i++){
-        s->push(1.0*i);
+        t->push(1.0*i);
     }
 
-    //s.push(1.0);
-    //s.push(10.0);
-
+    s.push("Hallo");
+    s.push("PK 2");
+/*
     foo(s);
-
+    foo(t);
+*/
     //Stack t = s;
 
     //std::cout << t.pop() << std::endl;
     //std::cout << s.pop() << std::endl;
-    delete s;
+    delete t;
     return 0;
 }

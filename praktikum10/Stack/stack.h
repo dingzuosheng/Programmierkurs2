@@ -18,11 +18,11 @@ class stack{
         T pop();
 };
 template<class T>
-stack::~stack(){
+stack<T>::~stack(){
     while(pop()!=-1);
 }
 template<class T>
-int stack::push(T key){
+int stack<T>::push(T key){
     element* neu = new element{key,top};
     if(neu){
         top = neu;
@@ -32,7 +32,7 @@ int stack::push(T key){
     }
 }
 template<class T>
-double stack::pop(){
+double stack<T>::pop(){
     if(top){
         element* tmp = top;
         T k = top->key;
