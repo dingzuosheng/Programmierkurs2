@@ -1,0 +1,15 @@
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\vl1.exe
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\vl1.deps.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\vl1.runtimeconfig.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\vl1.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\ref\vl1.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\bin\Debug\net6.0\vl1.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.csproj.AssemblyReference.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.GeneratedMSBuildEditorConfig.editorconfig
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.AssemblyInfoInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.AssemblyInfo.cs
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.csproj.CoreCompileInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\ref\vl1.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl1\obj\Debug\net6.0\vl1.genruntimeconfig.cache
