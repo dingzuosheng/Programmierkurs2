@@ -21,6 +21,7 @@ int main(){
     foo(t);
 */
     //Stack t = s;
+    
 
     //std::cout << t.pop() << std::endl;
     //std::cout << s.pop() << std::endl;
