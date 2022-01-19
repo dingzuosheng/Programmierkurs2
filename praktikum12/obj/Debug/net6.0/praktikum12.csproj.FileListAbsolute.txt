@@ -1,0 +1,15 @@
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\praktikum12.exe
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\praktikum12.deps.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\praktikum12.runtimeconfig.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\praktikum12.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\ref\praktikum12.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\bin\Debug\net6.0\praktikum12.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.csproj.AssemblyReference.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.GeneratedMSBuildEditorConfig.editorconfig
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.AssemblyInfoInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.AssemblyInfo.cs
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.csproj.CoreCompileInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\ref\praktikum12.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\praktikum12\obj\Debug\net6.0\praktikum12.genruntimeconfig.cache

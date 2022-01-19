@@ -1,0 +1,6 @@
+在一个命令行创建一个C#项目：
+	dotnet new console
+进入项目:
+	code ./
+运行项目：
+	dotnet run
