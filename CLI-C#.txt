@@ -2,5 +2,7 @@
 	dotnet new console
 进入项目:
 	code ./
+翻译代码：
+	dotnet build 
 运行项目：
 	dotnet run
