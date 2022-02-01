@@ -30,11 +30,21 @@ int pop(){
     return -1;
 }
 
+int count(struct element* start){
+    int i = 0;
+    while(start!=NULL){
+        i++;
+        start = start->next;
+    }
+    return i;
+}
+
 int main(){
     int i = 0;
     for(i = 1; i <= 100; i++){
         push(i);
     }
+    printf("Die Elementanzahl in dem Stack ist: ",count(top));
     for(i = 0; i < 100; i++){
         printf("%d\n",pop());
     }
