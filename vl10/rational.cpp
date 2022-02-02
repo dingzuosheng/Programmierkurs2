@@ -16,6 +16,15 @@ rational operator*(const rational& l, const rational& r){
     return rational{l.zaehler*r.zaehler,l.nenner*r.nenner};
 }
 
+rational rational::operator*(const int k) const{ //rational * k
+    return rational{this->zaehler * k,this->nenner};
+}
+
+rational operator*(const int k,const rational& r){
+    //return rational{r.zaehler * k, r.nenner};
+    return r*k;
+}
+
 std::ostream& operator<<(std::ostream& out,const rational& r){
     out << "(" << r.zaehler << "/" << r.nenner << ")";
     return out;
