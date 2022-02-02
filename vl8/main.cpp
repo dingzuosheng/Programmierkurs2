@@ -1,16 +1,17 @@
 #include <iostream>
+#include <string>
 #include "stack.h"
-
+/*
 void foo(stack *s){
 
 }
-
+*/
 int main(){
-    stack s;
-    stack *t = new stack{};
+    stack<std::string> s{"emptypop"};
+    stack<double> *t = new stack<double>{-1.0};
 
-    s.push(1.0);
-    s.push(50.0);
+    s.push("Hallo");
+    s.push("PK 2");
 
     t->push(1.0);
     t->push(50.0);
