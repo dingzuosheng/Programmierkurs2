@@ -1,13 +1,13 @@
 ﻿using System;
 namespace ArrayList
 {
-    public class ArrayList
+    public class ArrayList<T>
     {
-        private double[] feld;
+        private T[] feld;
         public int Capacity { get; private set; }
         public int Count { get; private set; }
 
-        public double this[int pos]
+        public T this[int pos]
         {
             set
             {
@@ -22,12 +22,12 @@ namespace ArrayList
         public ArrayList()
         {
             Capacity = 1;
-            feld = new double[Capacity];
+            feld = new T[Capacity];
             Count = 0;
         }
         private void Resize(int size)
         {
-            double[] neu = new double[size];
+            T[] neu = new T[size];
             for (int i = 0; i < Count; i++)
             {
                 neu[i] = feld[i];
@@ -35,7 +35,7 @@ namespace ArrayList
             feld = neu;
             Capacity = size;
         }
-        public void Insert(int pos, double key)
+        public void Insert(int pos, T key)
         {
             if (pos < 0 || pos > Count)
             {
@@ -53,12 +53,12 @@ namespace ArrayList
                             //wenn in der Mittel der List eine Zahl hinzugefügt wird, die originale Zahl wird nur überschrieben. 
         }
 
-        public void Add(double key)
+        public void Add(T key)
         {
             Insert(Count, key);
         }
 
-        public double Get(int pos)
+        public T Get(int pos)
         {
             if (pos < 0 || pos > Count)
             {
@@ -67,9 +67,9 @@ namespace ArrayList
             return feld[pos];
         }
 
-        public static ArrayList operator +(ArrayList l, ArrayList r)
+        public static ArrayList<T> operator +(ArrayList<T> l, ArrayList<T> r)
         {
-            ArrayList neu = new ArrayList();
+            ArrayList<T> neu = new ArrayList<T>();
             for (int i = 0; i < l.Count; i++)
             {
                 neu.Add(l[i]);

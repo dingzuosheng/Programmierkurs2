@@ -20,8 +20,8 @@ namespace ArrayList
                   Console.WriteLine(liste[i]);
               }
             */
-            ArrayList a = new ArrayList();
-            ArrayList b = new ArrayList();
+            ArrayList<double> a = new ArrayList<double>();
+            ArrayList<double> b = new ArrayList<double>();
 
             for (int i = 0; i < 10; i++)
             {
@@ -32,7 +32,7 @@ namespace ArrayList
                 b.Add(2.0 * i);
             }
 
-            ArrayList c = a + b;
+            ArrayList<double> c = a + b;
 
             for (int i = 0; i < c.Count; i++)
             {
