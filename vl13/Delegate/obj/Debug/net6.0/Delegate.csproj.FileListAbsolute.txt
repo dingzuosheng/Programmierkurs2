@@ -1,0 +1,15 @@
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\Delegate.exe
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\Delegate.deps.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\Delegate.runtimeconfig.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\Delegate.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\ref\Delegate.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\bin\Debug\net6.0\Delegate.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.csproj.AssemblyReference.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.GeneratedMSBuildEditorConfig.editorconfig
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.AssemblyInfoInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.AssemblyInfo.cs
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.csproj.CoreCompileInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\ref\Delegate.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\Delegate\obj\Debug\net6.0\Delegate.genruntimeconfig.cache
