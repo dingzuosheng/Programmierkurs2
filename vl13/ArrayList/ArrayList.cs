@@ -7,6 +7,18 @@ namespace ArrayList
         public int Capacity { get; private set; }
         public int Count { get; private set; }
 
+        public double this[int pos]
+        {
+            set
+            {
+                Insert(pos, value);
+            }
+            get
+            {
+                return Get(pos);
+            }
+        }
+
         public ArrayList()
         {
             Capacity = 1;
