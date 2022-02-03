@@ -66,5 +66,19 @@ namespace ArrayList
             }
             return feld[pos];
         }
+
+        public static ArrayList operator +(ArrayList l, ArrayList r)
+        {
+            ArrayList neu = new ArrayList();
+            for (int i = 0; i < l.Count; i++)
+            {
+                neu.Add(l[i]);
+            }
+            for (int i = 0; i < r.Count; i++)
+            {
+                neu.Add(r[i]);
+            }
+            return neu;
+        }
     }
 }
