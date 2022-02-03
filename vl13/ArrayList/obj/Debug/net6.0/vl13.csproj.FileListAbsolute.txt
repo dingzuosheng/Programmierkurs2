@@ -1,0 +1,15 @@
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.csproj.AssemblyReference.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.GeneratedMSBuildEditorConfig.editorconfig
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.AssemblyInfoInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.AssemblyInfo.cs
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.csproj.CoreCompileInputs.cache
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\vl13.exe
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\vl13.deps.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\vl13.runtimeconfig.json
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\vl13.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\ref\vl13.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\bin\Debug\net6.0\vl13.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\ref\vl13.dll
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.pdb
+F:\FH Dortmund\pk2\Praktikum\Programmierkurs2\vl13\ArrayList\obj\Debug\net6.0\vl13.genruntimeconfig.cache
