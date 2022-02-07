@@ -1,5 +1,5 @@
 ﻿using System;
-using Delegate;
+using Event;
 
 namespace Main
 {
