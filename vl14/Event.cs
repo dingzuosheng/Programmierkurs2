@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Event
 {
-    public delegate void RandomNumverHandler(int i);
+    public delegate void RandomNumberHandler(int i);
 
 
     public class Min
@@ -45,7 +45,7 @@ namespace Event
     }
     public class RandomGenerator
     {
-        public event RandomNumverHandler RandomNumber;
+        public event RandomNumberHandler RandomNumber;
         public void Start()
         {
             Random rg = new Random();

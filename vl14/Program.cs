@@ -1,5 +1,5 @@
 ﻿using System;
-using Event;
+using EventArgsKonvention;
 
 namespace Main
 {
