@@ -8,6 +8,8 @@ rational rational::operator*(const rational& r){
 }
 */
 
+rational::rational(int zaehler): rational{zaehler,1} {}
+
 rational operator*(const rational& l, const rational& r){
    /* rational out;
     out.zaehler = l.zaehler * r.zaehler;
