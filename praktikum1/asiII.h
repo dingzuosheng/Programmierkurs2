@@ -1,0 +1,1 @@
+void ausgabe1(int s);
