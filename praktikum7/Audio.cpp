@@ -2,7 +2,9 @@
 #include "Audio.h"
 #include <string>
 
-Audio::Audio(std::string titel, int jahr, std::string interpret, int dauer) : Medium(titel,jahr), interpret{interpret},dauer{dauer}{
+using namespace std;
+
+Audio::Audio(string titel, int jahr, string interpret, int dauer) : Medium(titel,jahr), interpret{interpret},dauer{dauer}{
 
 }
 

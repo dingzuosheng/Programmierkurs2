@@ -3,18 +3,21 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class Medium{
     private:
         int id;
         static int counter;
-        std::string titel;
+        string titel;
         int jahr;
     public:
-        Medium(std::string titel, int jahr);
+        Medium(string titel, int jahr);
+        virtual ~Medium() {} // hier reicht mit einem virtuellen Destruktor, sonst default Destruktor
         inline int getId() const {
             return id;
         }
-        inline std::string getTitel() const {
+        inline string getTitel() const {
             return titel;
         } 
         inline int getJahr() const {

@@ -2,10 +2,11 @@
 #include "Medium.h"
 #include <string>
 
+using namespace std;
 
 int Medium::counter = 0;
 
-Medium::Medium(std::string titel, int jahr) : titel{titel}, jahr{jahr}, id{counter++} {
+Medium::Medium(string titel, int jahr) : titel{titel}, jahr{jahr}, id{counter++} {
 
 }
 

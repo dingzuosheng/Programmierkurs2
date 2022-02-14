@@ -1,14 +1,17 @@
 #ifndef _BILD_H
 #define _BILD_H
 #include "Medium.h"
+#include <iostream>
+
+using namespace std;
 
 class Bild : public Medium {
     private:
-        std::string ort;
+        string ort;
     public:
-        Bild(std::string titel, int jahr, std::string ort);
+        Bild(string titel, int jahr, string ort);
         // hier keine Setter Methode, weil kein Zugreifen sondern nur auslesen.
-        inline std::string getOrt() const{ 
+        inline string getOrt() const{ 
             return ort;
         }
         void druckeDaten() override;

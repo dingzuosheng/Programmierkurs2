@@ -1,9 +1,11 @@
 #include <iostream>
 #include "Bild.h"
 #include <string>
+#include <iostream>
 
+using namespace std;
 
-Bild::Bild(std::string titel, int jahr, std::string ort):Medium(titel,jahr),ort{ort}{
+Bild::Bild(string titel, int jahr, string ort):Medium(titel,jahr),ort{ort}{
     
 }
 
