@@ -13,6 +13,18 @@ class Matrix{
         ~Matrix();  
         void set(int zeile, int spalte, T z);
         Matrix<T> operator*(const Matrix<T>& m);
+        inline T* operator[](int index) const{
+            if(index < 0 || index > m.getDimension()){
+                return nullptr;
+            }
+            return m[i];
+        }
+        inline T* getZeile(int n) const{
+            if(index < 0 || index > m.getDimension()){
+                return nullptr;
+            }
+            return m[i];
+        }
         inline T getElement(int x, int y) const{
             return m[x][y];
         }
@@ -75,7 +87,25 @@ Matrix<T> Matrix<T>::operator*(const Matrix<T>& m){
         }
         return neu;
 }
-
+template<class T>
+Matrix<T> operator*(const Matrix<T>& l, const Matrix<T>& r){
+    int n = l.getDimension();
+    Matrix<T> neu(n);
+    if(l.getDimension() != r.getDimension()){
+        std::cout << "Diese zwei Matrixen sind nicht gleiche Dimension" << std::endl;
+    }else{
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                int result = 0;
+                for(int x = 0; x < n; x++){
+                    result += l.getElement(i,x)*r.getElement(x,j);
+                }
+                neu.set(i,j,result);
+            }
+        }
+    }
+    return neu;
+}
 template<class T>
 void Matrix<T>::set(int x,int y, T z){
     m[x][y] = z;
