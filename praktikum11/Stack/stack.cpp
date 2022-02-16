@@ -16,7 +16,7 @@ Stack::~Stack(){
     while(top!=nullptr){
         pop();
     }
-    
+    //while(pop()!=-1);
 }
 
 Stack::Stack(const Stack& orig):top{nullptr}{
@@ -35,13 +35,16 @@ Stack::Stack(const Stack& orig):top{nullptr}{
 
     }*/
     //eine effizientere Lösung ist durch rekursive Methode 
+    Stack* temp;
     element* e = orig.top;
-    while(e->next!=nullptr){
+    while(e){
+        temp.push(e->key);
         e = e->next;
     }
-    push(e->key);
-    delete e;
-    
+    int k;
+    while((k=temp.pop())!=-1){
+        push(k);
+    } 
 }
 
 int Stack::Stack::push(int key){
