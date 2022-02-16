@@ -1,0 +1,1 @@
+int count_space.h(char s[]);
