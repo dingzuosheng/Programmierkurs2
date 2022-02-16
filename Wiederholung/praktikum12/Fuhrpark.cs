@@ -17,7 +17,7 @@ class Fuhrpark
         Iterator<Auto> it = liste.Iterator();
         while (it.hasNext())
         {
-            console.writeLine(it.Next().ToString());
+            Console.WriteLine(it.Next().ToString());
         }
     }
 
@@ -25,7 +25,7 @@ class Fuhrpark
     {
         Iterator<Auto> it = liste.Iterator();
         double gesamt = 0.0;
-        while (it.hasNext)
+        while (it.hasNext())
         {
             gesamt += (2022 - it.Next().Baujahr);
         }

@@ -21,7 +21,7 @@ class Auto
         }
     }
 
-    public string ToString()
+    public override string ToString()
     {
         return "Dies Auto wurde im Jahr " + Baujahr + " vom Hersteller " + Hersteller + " hergestellt";
     }

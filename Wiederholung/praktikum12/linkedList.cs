@@ -102,7 +102,7 @@
         }
     }
 
-    public Iterator Iterator()
+    public ListIterator Iterator()
     {
         ListIterator it = new ListIterator(head);
         return it;
