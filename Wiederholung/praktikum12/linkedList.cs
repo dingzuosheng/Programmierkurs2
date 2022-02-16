@@ -1,45 +1,43 @@
-﻿
-class LinkedList
+﻿class LinkedList<T>
 {
     internal class Element
     {
-        public int Key { get; set; }
-        public Element Next { get; private set; }
+        public T Key { get; set; }
+        public Element Next { get; set; }
 
-        public Element(int key, Element next = null)
+        public Element(T key, Element next = null)
         {
             Key = key;
             Next = next;
         }
     }
+
     private Element head;
     private Element tail;
 
     public int Size { get; private set; }
 
-    internal class ListIterator : Iterator
+    internal class ListIterator : Iterator<T>
     {
         private Element zeiger;
-
         public ListIterator(Element zeiger)
         {
             this.zeiger = zeiger;
         }
-
-        public bool HasNext()
+        public bool hasNext()
         {
             return this.zeiger != null;
         }
 
-        public int Next()
+        public T Next()
         {
             Element temp = zeiger;
             zeiger = zeiger.Next;
-            return temp.key;
+            return temp.Key;
         }
     }
 
-    public int Add(int key)
+    public int Add(T key)
     {
         Element neu = new Element(key);
         if (head == null)
@@ -49,7 +47,6 @@ class LinkedList
             return 1;
         }
         tail.Next = neu;
-        tail = neu;
         Size++;
         return 1;
     }
@@ -68,8 +65,7 @@ class LinkedList
             }
             else
             {
-                head = null;
-                tail = null;
+                head = tail = null;
                 Size--;
                 return 1;
             }
@@ -79,7 +75,7 @@ class LinkedList
             temp = head;
             int count = 0;
             while (count < i)
-            {
+            { // [0][1][2][3][4] i=3,size=5, stop at [2], temp = [2], delete [3]
                 temp = temp.Next;
                 count++;
             }
@@ -90,20 +86,26 @@ class LinkedList
         else if (i >= Size)
         {
             temp = head;
-            int count = 0;
+            int count = 1;
             while (count < Size)
             {
                 temp = temp.Next;
                 count++;
             }
             tail = temp;
-            Size--;
+            Size--; ;
             return 1;
         }
         else
         {
-            throw new ArgumenNullException("Index is out of range");
+            throw new ArgumentNullException("Error: Index is out of range");
         }
+    }
+
+    public Iterator Iterator()
+    {
+        ListIterator it = new ListIterator(head);
+        return it;
     }
 
 }

@@ -1,6 +1,5 @@
-public interface Iterator
+public interface Iterator<T>
 {
     bool hasNext();
-
-    int Next();
+    T Next();
 }
