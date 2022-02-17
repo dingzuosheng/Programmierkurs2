@@ -15,6 +15,67 @@ class LinkedList<T>
     private Node head;//kann auch internal sein, ? hinter Node  kann ein Feld als nullable definieren
     private Node tail;//kann auch internal sein
     public int Size { get; private set; }
+
+    public T this[int index]
+    {
+        get
+        {
+            if (index < 0 || index > Size)
+            {
+                throw new IndexOutOfRangeException("Index Error");
+            }
+            else
+            {
+                Node temp = head;
+                int i = 0;
+                while (i < index)
+                {
+                    temp = temp.Next;
+                    i++;
+                }
+                return temp.Data;
+            }
+        }
+        set
+        {
+            if (index < 0)
+            {
+                throw new IndexOutOfRangeException("Index Error");
+            }
+            else if (index == 0)
+            {
+                Node neu = new Node(value);
+                if (head == null)
+                {
+                    head = tail = neu;
+                }
+                else
+                {
+                    neu.Next = head;
+                    head = neu;
+                }
+                Size++;
+            }
+            else if (index > 0 && index < Size)
+            {
+                int count = 1;
+                Node temp = head;
+                while (count < index)
+                {
+                    temp = temp.Next;
+                    count++;
+                }
+                temp.Data = value;
+            }
+            else
+            {
+                Node neu = new Node(value);
+                tail.Next = neu;
+                tail = neu;
+                Size++;
+            }
+        }
+    }
     internal class ListIterator : Iterator<T>
     {
         private Node? zeiger; // zeiger sollte private sein
