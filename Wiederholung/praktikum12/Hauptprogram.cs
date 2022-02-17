@@ -3,24 +3,29 @@ class Hauptprogram
 {
     public static void Main(string[] args)
     {
-        /* Auto auto1 = new Auto("BMW", 2007);
-         Auto auto2 = new Auto("Volkswagen", 2013);
+        Auto auto1 = new Auto("BMW", 2007);
+        Auto auto2 = new Auto("Volkswagen", 2013);
 
 
-         Fuhrpark fuhrpark = new Fuhrpark();
+        Fuhrpark fuhrpark = new Fuhrpark();
 
-         fuhrpark.Aufnehmen(auto1);
-         fuhrpark.Aufnehmen(auto2);
+        Info info = new Info(fuhrpark);
 
-         fuhrpark.Inventur();
+        fuhrpark.Aufnehmen(auto1);
+        fuhrpark.Aufnehmen(auto2);
 
-         Console.WriteLine("Das Durchschnittflottenalter ist: " + fuhrpark.BerechneFlottenAlter());*/
-        LinkedList<Auto> liste = new LinkedList<Auto>();
-        liste[liste.Size] = new Auto("Audi", 2021);
-        liste[liste.Size] = new Auto("Tesla", 2021);
-        for (int i = 0; i < liste.Size; i++)
-        {
-            liste[i].DruckeDaten();
-        }
+        fuhrpark.Inventur();
+
+        Console.WriteLine("Das Durchschnittflottenalter ist: " + fuhrpark.BerechneFlottenAlter());
+
+        fuhrpark.Remove(0);
+        /* LinkedList<Auto> liste = new LinkedList<Auto>();
+         liste[liste.Size] = new Auto("Audi", 2021);
+         liste[liste.Size] = new Auto("Tesla", 2021);
+         for (int i = 0; i < liste.Size; i++)
+         {
+             liste[i].DruckeDaten();
+         }*/
+
     }
 }

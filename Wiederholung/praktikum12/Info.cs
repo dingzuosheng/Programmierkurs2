@@ -5,7 +5,9 @@ class Info
     public Info(Fuhrpark fuhrpark)
     {
         fuhrpark.AutoAddedEvent += Ausgabe;
+        //fuhrpark.AutoRemovedEvent += Ausgabe;
     }
+
 
     public void Ausgabe(Object sender, FuhrparkEventArgs args)
     {
