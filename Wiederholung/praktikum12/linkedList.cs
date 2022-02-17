@@ -17,6 +17,47 @@
 
     public int Size { get; private set; }
 
+    public T this[int index]
+    {
+        get
+        {
+            if (index < 0 || index > Size)
+            {
+                throw new IndexOutOfRangeException("Index Error");
+            }
+            else
+            {
+                Element temp = head;
+                int i = 0;
+                while (i < index)
+                {
+                    temp = temp.Next;
+                    i++;
+                }
+                return temp.Next.Key;
+            }
+        }
+        set
+        {
+            if (index < 0 || index > Size)
+            {
+                throw new IndexOutOfRangeException("Index Error");
+            }
+            else
+            {
+                Element temp = head;
+                int i = 1;
+                while (i <= index)
+                {
+                    temp = temp.Next;
+                    i++;
+                }
+                temp.Key = value;
+            }
+        }
+    }
+
+
     internal class ListIterator : Iterator<T>
     {
         private Element zeiger;
