@@ -10,6 +10,7 @@
             Key = key;
             Next = next;
         }
+
     }
 
     private Element head;
@@ -34,25 +35,46 @@
                     temp = temp.Next;
                     i++;
                 }
-                return temp.Next.Key;
+                return temp.Key;
             }
         }
         set
         {
-            if (index < 0 || index > Size)
+            if (index < 0)
             {
                 throw new IndexOutOfRangeException("Index Error");
             }
-            else
+            else if (index == 0)
             {
+                Element neu = new Element(value);
+                if (head == null)
+                {
+                    head = tail = neu;
+                }
+                else
+                {
+                    neu.Next = head;
+                    head = neu;
+                }
+                Size++;
+            }
+            else if (index > 0 && index < Size)
+            {
+                int count = 1;
                 Element temp = head;
-                int i = 1;
-                while (i <= index)
+                while (count < index)
                 {
                     temp = temp.Next;
-                    i++;
+                    count++;
                 }
                 temp.Key = value;
+            }
+            else
+            {
+                Element neu = new Element(value);
+                tail.Next = neu;
+                tail = neu;
+                Size++;
             }
         }
     }

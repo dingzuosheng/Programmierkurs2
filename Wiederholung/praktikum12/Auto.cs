@@ -25,4 +25,9 @@ class Auto
     {
         return "Dies Auto wurde im Jahr " + Baujahr + " vom Hersteller " + Hersteller + " hergestellt";
     }
+
+    public void DruckeDaten()
+    {
+        Console.WriteLine("Dies Auto wurde im Jahr {0} vom Hersteller {1} hergestellt", Baujahr, Hersteller);
+    }
 }
