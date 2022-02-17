@@ -3,6 +3,7 @@ class Fuhrpark
     private LinkedList<Auto> liste;
 
     public event EventHandler<FuhrparkEventArgs> AutoAddedEvent;
+    public event EventHandler<FuhrparkEventArgs> AutoRemovedEvent;
 
     public Fuhrpark()
     {
@@ -12,6 +13,13 @@ class Fuhrpark
     public void Aufnehmen(Auto a)
     {
         liste.Add(a);
+        OnAutoAddedEvent(a);
+    }
+
+    public void Remove(int i)
+    {
+        liste.Remove(i);
+        OnAutoRemovedEvent(i);
     }
 
     public void Inventur()
@@ -40,6 +48,15 @@ class Fuhrpark
         {
             FuhrparkEventArgs fuhrparkEventArgs = new FuhrparkEventArgs(a);
             AutoAddedEvent(this, fuhrparkEventArgs);
+        }
+    }
+
+    protected virtual void OnAutoRemovedEvent(int i)
+    {
+        if (AutoRemovedEvent != null)
+        {
+            FuhrparkEventArgs fuhrparkEventArgs = new FuhrparkEventArgs(i);
+            AutoRemovedEvent(this, fuhrparkEventArgs);
         }
     }
 
