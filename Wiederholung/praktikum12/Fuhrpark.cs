@@ -2,6 +2,8 @@ class Fuhrpark
 {
     private LinkedList<Auto> liste;
 
+    public event EventHandler<FuhrparkEventArgs> AutoAddedEvent;
+
     public Fuhrpark()
     {
         liste = new LinkedList<Auto>();
@@ -30,6 +32,15 @@ class Fuhrpark
             gesamt += (2022 - it.Next().Baujahr);
         }
         return gesamt / liste.Size;
+    }
+
+    protected virtual void OnAutoAddedEvent(Auto a)
+    {
+        if (AutoAddedEvent != null)
+        {
+            FuhrparkEventArgs fuhrparkEventArgs = new FuhrparkEventArgs(a);
+            AutoAddedEvent(this, fuhrparkEventArgs);
+        }
     }
 
 }
