@@ -11,15 +11,15 @@ class Rational
 
     public override string ToString()
     {
-        return string.Format("{0}/{1}", Zaehler, Nenner);
+        return "(" + Zaehler + "/" + Nenner + ")";
     }
     public static Rational operator *(Rational l, Rational r)
     {
         if (l.Nenner != 0 && r.Nenner != 0)
         {
-            Rational neu;
+            Rational neu = new Rational(0, 0);
             neu.Zaehler = l.Zaehler * r.Zaehler;
-            neu.Nenner = l.Nenner * r * Nenner;
+            neu.Nenner = l.Nenner * r.Nenner;
             return neu;
         }
         else
