@@ -8,6 +8,9 @@ Blob::Blob(unsigned char* feld,long n){
 
 Blob::Blob(const Blob& orig):feld{orig.feld},n{orig.n}{
     feld = new unsigned char[n];
+    for(int i = 0; i < n; i++){
+        feld[i] = orig.feld[i];
+    }
 }
 
 Blob::~Blob(){
@@ -21,6 +24,7 @@ unsigned char& Blob::operator[](long index){
         throw std::out_of_range("Indexüberschreitung");
     }
 }
+
 void Blob::operator[](long index){
     feld[index] = value;
 }
