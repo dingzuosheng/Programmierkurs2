@@ -2,7 +2,7 @@
 #include <stdexcept>
 #include "blob.h"
 
-Blob::Blob(unsigned char* feld,long n): feld{new byte[n]}, n{n}{
+Blob::Blob(byte* feld,long n): feld{new byte[n]}, n{n}{
     for(int i = 0; i < n; i++){
         this->feld[i] = feld[i];
     }
@@ -15,7 +15,7 @@ Blob::~Blob(){
     delete[] feld;
 }
 
-unsigned char& Blob::operator[](long index){
+byte& Blob::operator[](long index){
     if(index>=0 && index<n){
         return feld[index];
     }else{

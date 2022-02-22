@@ -3,11 +3,11 @@ using byte = unsigned char;
 
 class Blob{
     private:
-        unsigned char* feld;
+        byte* feld;
         long n;
     public:
-        Blob(unsigned char* feld, long n);
+        Blob(byte* feld, long n);
         Blob(const Blob& orig);
         ~Blob();
-        unsigned char& operator[](long index);
+        byte& operator[](long index);
 };
