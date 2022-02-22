@@ -1,3 +1,6 @@
+
+using byte = unsigned char;
+
 class Blob{
     private:
         unsigned char* feld;
@@ -7,5 +10,4 @@ class Blob{
         Blob(const Blob& orig);
         ~Blob();
         unsigned char& operator[](long index);
-        void operator[](long index);
 };

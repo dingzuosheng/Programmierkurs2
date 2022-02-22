@@ -2,15 +2,13 @@
 #include <stdexcept>
 #include "blob.h"
 
-Blob::Blob(unsigned char* feld,long n){
-    feld = new unsigned char[n];   
+Blob::Blob(unsigned char* feld,long n): feld{new byte[n]}, n{n}{
+    for(int i = 0; i < n; i++){
+        this->feld[i] = feld[i];
+    }
 }
 
-Blob::Blob(const Blob& orig):feld{orig.feld},n{orig.n}{
-    feld = new unsigned char[n];
-    for(int i = 0; i < n; i++){
-        feld[i] = orig.feld[i];
-    }
+Blob::Blob(const Blob& orig): Blob{orig.feld,orig.n}{
 }
 
 Blob::~Blob(){
@@ -25,7 +23,4 @@ unsigned char& Blob::operator[](long index){
     }
 }
 
-void Blob::operator[](long index){
-    feld[index] = value;
-}
 
